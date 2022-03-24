@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./fire.ico" type="image/x-icon">
+    <title>Memory game</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container container">
+            <div class="header-wrapper">
+                <h1>Memory game</h1>
+                <nav>
+                    <div class="nav-items">
+                        <div class="switch-size">
+                            <input type="range" class="size" min="1" max="20" step="1" value="10">Select number of
+                            pairs</input>
+                        </div>
+                        <div class="btns">
+                            <button class="btn" type="submit" data-action="show">Show solution</button>
+                            <button class="btn" type="submit" data-action="restart">Restart</button>
+                            <button class="btn" type="submit" data-action="newGame">New game</button>
+                            <button class="btn" type="submit" data-action="history">History</button>
+                        </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <div class="playground" id="playground">
+                </div>
+            </div>
+            <div class="win-wrapper">
+                <div class="win">
+                    <span> You won! </span> 
+                    <span> You score:</span>
+                    <span class="score-game" id="score"></span>
+                    <span>New game?</span>
+                    <div class="switch-actions" id="switchActions">
+                        <button type="submit " class="switch btn" data-solution="yes">Yes</button>
+                        <button type="submit" class="switch btn" data-solution="no">No</button>
+                    </div>
+                </div>
+            </div>
+            <div class="last-games-wrapper">
+                <div class="last-games">
+
+                </div>
+                <button type="submit" class="skip btn">Skip</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-data">
+                <p class="footer-item">&copy;</p>
+                <p class="footer-item">2022</p>
+                <a class="footer-item footer-link git" href="https://github.com/EvgeniyaAnisko" target="_blank"> github
+                </a>
+            </div>
+            <a class="footer-item footer-link" href="https://rs.school/js-stage0/" target="_blank"><img class="rs"
+                    src="./assets/svg/rss.svg" alt="Rolling Scopes School"></a>
+        </div>
+    </footer>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
